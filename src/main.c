@@ -11,6 +11,7 @@ int main(int argc, char* argv[])
     (void)argc;
     (void)argv;
     InitWindow(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE);
+    SetTargetFPS(60);
 
     while (!WindowShouldClose())
     {
