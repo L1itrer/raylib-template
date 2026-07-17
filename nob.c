@@ -89,6 +89,7 @@ int main(int argc, char* argv[])
     nob_cmd_append(cmd, "clang-cl");
 
     nob_cmd_append(cmd, "./src/main.c", "./out/raylib.lib");
+    nob_cmd_append(cmd, "-I./src/raylib5-5/");
     nob_cmd_append(cmd, "user32.lib", "kernel32.lib", "gdi32.lib", "shell32.lib");
     nob_cmd_append(cmd, "-W4", "-g");
     nob_cmd_append(cmd, "-o", BUILD_RESULT);
